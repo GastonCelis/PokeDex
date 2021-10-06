@@ -47,13 +47,79 @@ h1{
     height: 800px;
     border-radius: 10px;
     position: relative;
-    display: none;
+    visibility: hidden;
+    display: grid;
+    grid-template-areas: "cerrar-pokedex buscardor buscardor"
+                            "datos-pkm datos-pkm datos-pkm"
+                            "datos-pkm datos-pkm datos-pkm"
+                            "datos-pkm datos-pkm datos-pkm"
+                            "btn1 btn2 btn3"
+                            "btn4 btn5 btn6";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 8% 20% 20% 20% 15% 15%;
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
 }
 
 .cerrar-pokedex{
+    grid-area: cerrar-pokedex;
     background-image: linear-gradient(to bottom, #ffffff, #f0f2ff, #d8e8ff, #b9dfff, #91d8fd);
-    width: 9%;
-    height: 7.5%;
+    width: 20%;
+    height: 70%;
     border-radius: 50%;
-    margin: 1em;
+    margin: 0.5em;
+}
+
+.datos-pkm{
+    grid-area: datos-pkm;
+    background-image: linear-gradient(to bottom, #ffffff, #f0f2ff, #d8e8ff, #b9dfff, #91d8fd);
+    width: 100%;
+    border-radius: 2px;
+}
+
+.buscardor{
+    grid-area: buscardor;
+}
+
+.btn1{
+    grid-area: btn1;
+    width: 33%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+}
+.btn2{
+    grid-area: btn2;
+    width: 33%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+}
+.btn3{
+    grid-area: btn3;
+    width: 33%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+}
+.btn4{
+    grid-area: btn4;
+    width: 33%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+}
+.btn5{
+    grid-area: btn5;
+    width: 33%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+}
+.btn6{
+    grid-area: btn6;
+    width: 33%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
 }

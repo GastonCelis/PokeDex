@@ -1,7 +1,7 @@
 $(".abrir-pokedex").click(()=>{
-    $(".caja-abierta").css("display", "inline")
+    $(".caja-abierta").css("visibility", "visible")
 });
 
 $(".cerrar-pokedex").click(()=>{
-    $(".caja-abierta").css("display", "none")
+    $(".caja-abierta").css("visibility", "hidden")
 })
